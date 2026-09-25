@@ -242,10 +242,12 @@ LPC2148
                        Return to Main
 ```
 
----
+## 5.LCD display
+
+![LCD display](LCD display.png)
 
 
-## 5. Hardware Details
+## 6. Hardware Details
 
 ### Hardware Components
 
@@ -339,7 +341,7 @@ The program enables VIC channel 14, assigns the interrupt service routine to vec
 
 ---
 
-## 6. LCD Display with Train Details
+## 7. LCD Display with Train Details
 
 The project uses a **16×2 LCD** to present the current time/date and train information.
 
