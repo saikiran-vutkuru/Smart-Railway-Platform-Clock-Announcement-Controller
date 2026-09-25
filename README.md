@@ -244,6 +244,7 @@ LPC2148
 
 ---
 
+
 ## 5. Hardware Details
 
 ### Hardware Components
@@ -296,16 +297,16 @@ These connections are defined in `kpm_defines.h`, and the keypad driver configur
 
 ```text
 +-----+-----+-----+-----+
-|  1  |  2  |  3  |  E  |
+|  1  |  2  |  3  |  A  |
 +-----+-----+-----+-----+
 |  4  |  5  |  6  |  B  |
 +-----+-----+-----+-----+
-|  7  |  8  |  9  |  -  |
+|  7  |  8  |  9  |  C  |
 +-----+-----+-----+-----+
-|  C  |  0  |  =  |  +  |
+|  *  |  0  |  =  |  D  |
 +-----+-----+-----+-----+
 
-E = Enter
+A = Enter
 B = Backspace
 ```
 
