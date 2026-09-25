@@ -358,7 +358,7 @@ HH:MM:SS  MON
 DD/MM/YYYY
 ```
 
-The supplied code writes the RTC hour, minute, second, date, month and year directly to the LCD and uses the `week[]` array for the day abbreviation. fileciteturn0file10L70-L94
+The supplied code writes the RTC hour, minute, second, date, month and year directly to the LCD and uses the `week[]` array for the day abbreviation. 
 
 ### B. Upcoming Train Display
 
@@ -378,7 +378,7 @@ The actual source uses:
 - Platform number on line 2.
 - Arrival time in `arr-HH:MM` format.
 
-The train display logic is implemented separately for all three trains. fileciteturn0file13L75-L119
+The train display logic is implemented separately for all three trains.
 
 ### C. Arrival Display
 
@@ -389,7 +389,7 @@ At the programmed arrival time:
 Train1 arrived
 ```
 
-The buzzer is activated during the arrival indication. The corresponding status LED is selected according to the train counter/status logic. fileciteturn0file13L122-L153
+The buzzer is activated during the arrival indication. The corresponding status LED is selected according to the train counter/status logic. 
 
 ### D. Departure Display
 
@@ -400,7 +400,7 @@ At the programmed departure time:
 Train1 leaving
 ```
 
-The buzzer is activated and the LCD shows the departure message. fileciteturn0file13L154-L185
+The buzzer is activated and the LCD shows the departure message. 
 
 ### E. No Train Condition
 
@@ -410,8 +410,7 @@ When no programmed train matches the current display condition:
 NO TRAIN
 ```
 
-is shown on the LCD. fileciteturn0file13L396-L403
-
+is shown on the LCD. 
 ### Train Information Used
 
 The project specification provides the following example train database:
@@ -465,7 +464,7 @@ Smart-Railway-Platform/
 | `delay.c` | Microsecond, millisecond and second delay routines |
 | Header files | Function declarations, pin definitions, data types and LCD/keypad macros |
 
-The LCD module provides functions such as `InitLCD()`, `CmdLCD()`, `CharLCD()`, `StrLCD()` and numeric display functions. fileciteturn0file4L1-L10
+The LCD module provides functions such as `InitLCD()`, `CmdLCD()`, `CharLCD()`, `StrLCD()` and numeric display functions. 
 
 ---
 
@@ -494,7 +493,7 @@ Display   Continue
 train     monitoring
 ```
 
-The source handles the normal two-minute-before-arrival case and also contains special handling for arrival times around midnight. fileciteturn0file13L45-L73
+The source handles the normal two-minute-before-arrival case and also contains special handling for arrival times around midnight. 
 
 ---
 
@@ -521,8 +520,7 @@ time       verification
      Update train schedule
 ```
 
-The supplied interrupt routine provides RTC editing and train schedule editing through the keypad. The password used in the current source is `301`. fileciteturn0file12L21-L31 fileciteturn0file12L75-L91
-
+The supplied interrupt routine provides RTC editing and train schedule editing through the keypad. The password used in the current source is `301`.
 ---
 
 ## Software and Development Tools
@@ -534,7 +532,7 @@ The supplied interrupt routine provides RTC editing and train schedule editing t
 - **Flash Magic** for programming the microcontroller
 - LPC2148 device header/library support
 
-The project PDF lists Embedded C and Flash Magic as the software requirements. fileciteturn0file14L22-L32
+The project PDF lists Embedded C and Flash Magic as the software requirements. 
 
 ### Target Controller
 
