@@ -242,9 +242,9 @@ LPC2148
                        Return to Main
 ```
 
-## 5.LCD display
+## 5.LCD 
 
-![LCD display](LCD display.png)
+![LCD](LCD display.png)
 
 
 ## 6. Hardware Details
