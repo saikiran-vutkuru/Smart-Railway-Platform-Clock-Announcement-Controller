@@ -244,7 +244,7 @@ LPC2148
 
 ## 5.LCD 
 
-![LCD](LCD display.png)
+![LCD](LCD%20display.png)
 
 
 ## 6. Hardware Details
