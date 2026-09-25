@@ -49,45 +49,9 @@ The project specification defines support for multiple train records and describ
 
 ---
 
-## 3. Block Diagram
+## 3. Circuit Diagram
 
-```text
-                         +----------------------+
-                         |      ADMIN USER      |
-                         +----------+-----------+
-                                    |
-                              4×4 Matrix Keypad
-                                    |
-                                    v
-+----------------+          +-----------------------+
-|                |          |                       |
-|   RTC          +--------->|                       |
-| Real-Time      |          |                       |
-| Clock          |          |                       |
-+----------------+          |      LPC2148          |
-                            |    MICROCONTROLLER     |
-+----------------+          |                       |
-|                |          |  - RTC Processing     |
-|  EINT0         +--------->|  - Schedule Compare   |
-| Admin Switch   |          |  - Keypad Processing  |
-|                |          |  - LCD Control        |
-+----------------+          |  - LED/Buzzer Control |
-                            |                       |
-+----------------+          +----+-----------+------+
-| 4×4 Keypad     |               |           |
-| P1.16-P1.23    +---------------+           |
-+----------------+               |           |
-                                 |           |
-                    +------------+           +-------------+
-                    |                                      |
-                    v                                      v
-             +-------------+                         +-------------+
-             |   16×2 LCD  |                         | LED + Buzzer|
-             | Passenger   |                         | Status /    |
-             | Information |                         | Alert       |
-             +-------------+                         +-------------+
-```
-
+ ![Circuit Diagram](circuit.png)
 ### Main signal flow
 
 ```text
