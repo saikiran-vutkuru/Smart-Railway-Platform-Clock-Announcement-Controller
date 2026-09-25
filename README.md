@@ -334,7 +334,7 @@ VIC Channel -> 14
 Trigger -> Falling Edge
 ```
 
-The program enables VIC channel 14, assigns the interrupt service routine to vector slot 0, and configures EINT0 as falling-edge triggered. fileciteturn0file10L27-L44
+The program enables VIC channel 14, assigns the interrupt service routine to vector slot 0, and configures EINT0 as falling-edge triggered. 
 
 ---
 
