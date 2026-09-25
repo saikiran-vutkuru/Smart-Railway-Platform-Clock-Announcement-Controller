@@ -273,7 +273,7 @@ The supplied `lcd_defines` and `lcd.c` files configure the LCD as an **8-bit, 2-
 | EN | P0.17 |
 | RW | P0.18 |
 
-The LCD driver configures these pins as GPIO outputs and uses the HD44780-style commands for a 2-line LCD. fileciteturn0file5L13-L26 fileciteturn0file9L29-L42
+The LCD driver configures these pins as GPIO outputs and uses the HD44780-style commands for a 2-line LCD. 
 
 ### Keypad Connections
 
@@ -290,7 +290,7 @@ The supplied keypad definitions use **Port 1**:
 | Column 2 | P1.22 |
 | Column 3 | P1.23 |
 
-These connections are defined in `kpm_defines.h`, and the keypad driver configures the row pins and scans the four columns. fileciteturn0file3L3-L11 fileciteturn0file8L13-L24
+These connections are defined in `kpm_defines.h`, and the keypad driver configures the row pins and scans the four columns. 
 
 ### Keypad Layout Used in the Program
 
@@ -309,7 +309,7 @@ E = Enter
 B = Backspace
 ```
 
-The key lookup table in the supplied `kpm.c` defines this exact mapping. fileciteturn0file8L7-L10
+The key lookup table in the supplied `kpm.c` defines this exact mapping. 
 
 ### LED and Buzzer Connections
 
@@ -322,7 +322,7 @@ LED_RED    -> P0.23  (macro value 23)
 LED_YELLOW -> P0.24  (macro value 24)
 ```
 
-The source comments contain a pin-comment inconsistency for the buzzer (`#define BUZZER 21 //po.20`), so the **macro value P0.21** should be treated as the implemented connection unless the hardware wiring is intentionally different. The output code configures these GPIOs as outputs. fileciteturn0file13L9-L15 fileciteturn0file13L39-L43
+The source comments contain a pin-comment inconsistency for the buzzer (`#define BUZZER 21 //po.20`), so the **macro value P0.21** should be treated as the implemented connection unless the hardware wiring is intentionally different. The output code configures these GPIOs as outputs. 
 
 ### External Interrupt
 
